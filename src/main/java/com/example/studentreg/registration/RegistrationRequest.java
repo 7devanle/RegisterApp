@@ -1,13 +1,11 @@
 package com.example.studentreg.registration;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
+import lombok.*;
 
-@Data
+@Getter @ToString @AllArgsConstructor @EqualsAndHashCode
 public class RegistrationRequest {
-    private final String firstName;
-    private final String lastName;
+    private final String name;
+    private final String userName;
     private final String email;
     private final String password;
 
